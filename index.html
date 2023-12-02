@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <img src="controls/leftArrow.png" alt="">
+            </div>
+            <div class="circle">
+                <img src="logo.png" alt="" id="myLogo">
+            </div>
+            <div class="circle circl1">
+            <img src="controls/menu.png" id="img3" onclick="toggleMenu()">
+            <div id="menu" class="subMenuWrap">
+                <ul id="submenu">
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Setings</li>
+                    <li>LogOut</li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+     <img src="creep.jpg" class="song-img" id="cover-photo">
+                  <h1 id="song-name">DJ Perez</h1>
+                   <p id="song-details">Best Of Costa Titch</p>
+           <audio id="song">
+            <source id="audio" src="music/Costa Titch Tribute 2023 - DJ Perez.mp3" type="audio/mp3">
+           </audio>
+        <input type="range" value="0" id="progress" oclick="progressUpgate()">
+          <div class="controls">
+             <div><img src="controls/left.png" alt="" onclick="previousSong()"></div>
+             <div><img src="controls/backward.png" alt="" onclick="backward()" ></div>
+             <div onclick="playPause()" id="myImg"><img src="controls/play.png" id="ctrlIcon"></div> 
+             <div><img src="controls/forward.png" alt="" onclick="forward()"></div>
+            <div><img src="controls/right.png" alt="" onclick="nextSong()"></div>
+         </div>
+    </div>
+   </div> 
+    <script src=""></script>
+    <script src="script2.js"></script>
+</body>
+</html>

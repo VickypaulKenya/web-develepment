@@ -1,0 +1,229 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: lilita system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    width:100%;
+    background:#886666;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat:repeat;
+}
+.music-player{
+    background:#ffe0e5;
+    width:400px;
+    padding:25px 35px;
+    text-align: center;
+    border-radius: 24px;
+    border:5px solid lightblue;
+    height:780px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+}
+
+nav img{
+    width:20px;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    animation: rotate 2s infinite;
+}
+
+nav .circle{
+    border-radius: 50%;
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    background:#fff;
+    color:#f53192;
+    box-shadow: 0 5px 10px rgba(255,25,26,.22);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.song-img{
+    width:220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgba(255,25,26,.22);
+}
+
+.music-player h1{
+    font-size:20px;
+    font-weight: 400;
+    color:#333;
+    margin-top: 20px;
+}
+
+.music-player p{
+    font-size: 14px;
+    color:#333;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width:100%;
+    max-height: 700px;
+    height:6px;
+    background:#f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:40px 0;
+
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+     background:#f53192;
+     width:20px;
+     height: 20px;
+     border-radius: 50%;
+     border:5px solid #ffff;
+     box-shadow: 0 5px 5px rgba(255,26,26,.22);
+}
+
+.controls{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:lightcoral;
+    border-radius: 24px;
+    margin:40px 0;
+}
+
+.controls div{
+width:30px;
+height: 30px;
+margin: 20px;
+background:#5e5252;
+align-items: center;
+display: flex;
+justify-content: center;
+border-radius: 50%;
+box-shadow: 0 10px 20px rgba(255,26,26,.22);
+cursor: pointer;
+}
+
+.controls div img{
+    width:20px;
+    height: 20px;
+    margin:20px;
+    align-items: center;
+    transition:transform .5s ease-out;
+    border-radius: 50%;
+    padding:1px;
+}
+.controls div:nth-child(3) img{
+    transform: scale(1.5);
+    color:white;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    padding:10px;
+    }
+
+    
+.controls div:hover img{
+    transform: translateY(-2px);
+}
+
+    
+.controls div:hover img:nth-child(1){
+    background:red;
+}
+#myLogo{
+    width:80px;
+}
+nav div:nth-child(2){
+    width:80px;
+    height: 80px;;
+    background:rgb(255, 255, 255);
+
+}
+#cover-photo{
+    transform: rotate(360deg) infinte;
+    animation: rotate infinite;
+}
+
+@keyframes imageCOver {
+    0%{transform: rotate(0deg);
+    animation-timing-function: ease;
+    }
+    100%{transform:rotate(360deg);
+    animation-timing-function: ease;
+    }   
+}
+
+ #menu{
+    display: flex;
+    background:rgb(253, 160, 225);
+    width:70px;
+    justify-content: center;
+    margin-top: 190px;
+    line-height: 1.5;
+    color:darkorchid;
+    height: auto;
+    cursor: pointer;
+    opacity:0;
+    border-radius: 5px;
+    border:3px solid brown;
+}
+
+#menu.transform{
+    transform: translateX(100px);
+}
+
+nav .circl1 img{
+    display: flex;
+    background:white;
+    align-items: center;
+}
+
+
+nav .circl1:hover{
+    background:blue;
+    transform:translateX(-5px);
+
+}
+
+.circl1{
+    align-items: center;
+    display:flex;
+    max-height: 600px;
+    transition:transform 1s ease;
+}
+.circl1 ul{
+    list-style-type: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.circl1 ul li{
+    transition:transform .5s;
+}
+
+.circl1 ul li:hover{
+    transform:translateX(3px);
+    color:white;
+}
+
+
+#cover-photo{
+    animation:imageCover  2s infinite;
+    transition: imageCover 1s;
+}
